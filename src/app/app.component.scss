@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+    height: 100vh;
+  }
+  .container .list,
+  .container .detail {
+    background-color: white;
+    padding: 15px;
+    border-right: 1px solid gray;
+    width: 49%;
+  }
+  .container .list {
+    padding: 15px 0;
+  }
+  .container .list h1 {
+    padding-left: 15px;
+  }
+  
+  .container .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .detail .part {
+    margin-top: 20px;
+  }
+  .btn_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn_container button {
+    background-color: rgb(67, 67, 233);
+    color: white;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 4px;
+    border: none;
+  }
+  .btn_container button:active {
+    font-size: .8rem;
+  }
+  .container .list .cardlist{
+    margin-top: 20px;
+  }

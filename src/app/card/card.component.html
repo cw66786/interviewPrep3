@@ -1,1 +1,14 @@
-<p>card works!</p>
+<div
+  class="card"
+  [ngStyle]="{
+    'border-left':
+      item.color === selected
+        ? '10px solid ' + item.color
+        : '4px solid ' + item.color,
+    'background-color': item.color === selected ? '#d9d9d9' : ''
+  }"
+>
+  <h3>{{ item.name }}</h3>
+  <p>{{ item.description | shorten }}</p>
+</div>
+
