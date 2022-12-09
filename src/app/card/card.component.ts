@@ -10,7 +10,7 @@ export class CardComponent implements OnInit {
   @Input()
   item!: Card;
   @Input()
-  selected!: string;
+  selectedColor!: string;
 
   constructor() {}
 

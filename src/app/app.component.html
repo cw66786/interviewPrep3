@@ -1,21 +1,22 @@
-<main class="container">
-  <section class="list">
+
+<div class="container">
+  <div class="list">
     <header><h1>List</h1></header>
     <div class="cardlist">
       <app-card
         *ngFor="let item of data"
         [item]="item"
-        [selected]='mainData.color'
+        [selectedColor]='mainData.color'
         (click)="getItem(item)"
       ></app-card>
     </div>
-  </section>
+  </div>
 
-  <section class="detail">
+  <div class="detail">
     <h2 class="part">{{ mainData.name }}</h2>
     <p class="part">{{ mainData.description }}</p>
     <div class="btn_container">
       <button >Save</button>
     </div>
-  </section>
-</main>
+  </div>
+</div>
